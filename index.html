@@ -2,14 +2,186 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Primeiro Servidor HTTP</title>
-</head>
-<body>
-    <h1>Meu Primeiro Servidor HTTP</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p>Servidor: IIS</p>
-    <p>Protocolo: HTTP</p>
-    <p>Sistema operacional: Windows</p>
-    <p>Aluno: SEU NOME</p>
+    <title>Minha Página Pessoal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #dff6ff, #ffe0ef);
+            color: #333;
+        }
+
+        header {
+            background: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #f8c8dc;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #e91e63;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .sobre {
+            border-left: 8px solid #4caf50;
+        }
+
+        .interesses {
+            border-left: 8px solid #ffc107;
+        }
+
+        .contato {
+            border-left: 8px solid #e91e63;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #1976d2;
+        }
+
+        .interesses ul {
+            list-style: none;
+        }
+
+        .interesses li {
+            background: #fff3b0;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+        }
+
+        .contato p {
+            margin: 8px 0;
+        }
+
+        footer {
+            background: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #e91e63;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .botao:hover {
+            background: #1976d2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌸 Minha Página Pessoal 🌸</h1>
+        <p>Bem-vindo ao meu espaço na internet!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#interesses">Interesses</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main id="inicio">
+
+        <section class="card sobre" id="sobre">
+            <h2>💙 Sobre Mim</h2>
+
+            <p>
+                Olá! Meu nome é <strong>SEU NOME</strong>.
+                Esta é minha primeira página pessoal criada em HTML
+                e hospedada em um servidor web.
+            </p>
+
+            <p>
+                Estou aprendendo sobre tecnologia, desenvolvimento web
+                e servidores.
+            </p>
+        </section>
+
+        <section class="card interesses" id="interesses">
+            <h2>💛 Meus Interesses</h2>
+
+            <ul>
+                <li>💻 Tecnologia</li>
+                <li>🌐 Desenvolvimento Web</li>
+                <li>🎨 Design</li>
+                <li>📚 Estudos</li>
+                <li>🚀 Novos projetos</li>
+            </ul>
+        </section>
+
+        <section class="card contato" id="contato">
+            <h2>💗 Entre em Contato</h2>
+
+            <p>📧 E-mail: seuemail@email.com</p>
+            <p>📱 Telefone: (00) 00000-0000</p>
+
+            <a href="mailto:seuemail@email.com" class="botao">
+                Enviar mensagem
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>💚 Minha Página Pessoal © 2026</p>
+        <p>Desenvolvido com HTML e CSS</p>
+    </footer>
+
 </body>
 </html>
